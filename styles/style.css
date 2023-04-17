@@ -1,55 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-}
- 
-.body {
     box-sizing: border-box;
-
 }
 
-.cabecalho {
-   padding: 25px;
-   background-color: #1B1A1C;
+body {
+    background-color: #1A0007;
+    box-sizing: border-box;
 }
-
-.cabecalho__botao {
+/* cabecalho */ 
+#cabecalho {
     text-decoration: none;
-    font-family: 'Anton', sans-serif;
-    color: #f6f6f6;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    width: 100%;
 }
 
-.presente {
-    background: url(../assets/principal.png);
+#cabecalho .cabecalho-items {
     display: flex;
-    align-items: center;
-    box-shadow: 3px 3px 5px 6px #000000; 
-    box-sizing: border-box;
+}
+
+#cabecalho .cabecalho-item {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Principal */
+#presente {
+    margin: 0% 7%;
+}
+
+#presente .presente-items {
+    background-image: url("../assets/imagem\ secundaria.png");
+    background-color: none;
+    border-radius: 0px 0px 20px 20px;
+    padding: 20px 300px 30px 300px;
     background-repeat: no-repeat;
+    transition: transform .2s;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 100px;
 }
 
-.presente__imagem {
-    
-    height: 100vmin;
-    max-width: 100%;
-    max-height: 100%;
-
+#presente .presente-items:hover {
+    transform: scale(1.2px);
 }
 
-.presente__texto {
-    color: #f6f6f6;
-    font-size: 45px;
+#presente .presente-item {
+    margin: 60px 0;
+    color: white;
+    text-shadow: 3px 0 3px black;
+    padding: 0 20%;
+    font-size: 30px;
+    transition: transform .2s;
     font-family: 'Nanum Pen Script', cursive;
-    position: absolute;
-    top: 10%;
-    transition: transform .3s;
-    padding: 15% 25% 0% 25%;
+    font-weight: 600;
 }
 
-.presente__texto:hover {
+ #presente .presente-item:hover {
     transform: scale(1.1);
-    backface-visibility: blur(8px);
 }
 
+#presente .presente-items img {
+    width: 300px;
+    height: 100px;
+ }
+
+ #presente .presente-items .presente-rede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-size: 30px;
+}
+
+ #presente .presente-items .presente-rede .presente-redes {
+    text-decoration: none;
+ }
