@@ -19,6 +19,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     width: 100%;
+    position: fixed top;
 }
 
 #cabecalho .cabecalho-items {
@@ -33,13 +34,14 @@ body {
 
 /* Principal */
 #presente {
-    margin: 0% 7%;
+    margin: 2% 7% 0% 7%;
 }
 
 #presente .presente-items {
-    background-image: url("../assets/imagem\ secundaria.png");
-    background-color: none;
-    border-radius: 0px 0px 20px 20px;
+    background-image: url("../assets/imagem1.png");
+    background-size: cover;
+    background-position: left;
+    border-radius: 20px 20px 20px 20px;
     padding: 20px 300px 30px 300px;
     background-repeat: no-repeat;
     transition: transform .2s;
@@ -57,7 +59,7 @@ body {
 }
 
 #presente .presente-item {
-    margin: 60px 0;
+    margin: 45px 0;
     color: white;
     text-shadow: 3px 0 3px black;
     padding: 0 20%;
@@ -82,8 +84,41 @@ body {
     align-items: center;
     gap: 70px;
     font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
- #presente .presente-items .presente-rede .presente-redes {
-    text-decoration: none;
- }
+#presente .presente-items .presente-rede:hover {
+    cursor: pointer;
+}
+
+#presente .presente-rolagem {
+    margin-top: 10px;
+    background-image: url(../assets/elie.jpg);
+    background-size: contain;
+    background-position: top;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: #231C1C;
+    width: 350px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+}
+
+#presente .presente-rolagem:hover {
+    transform: scale(1.1);
+}
+
+#presente .presente-rolagem p {
+    margin-top: 200px;
+    margin-left: 8px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Nanum Pen Script', cursive;
+}
